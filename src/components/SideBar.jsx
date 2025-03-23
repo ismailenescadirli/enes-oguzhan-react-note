@@ -12,7 +12,7 @@ export default function Sidebar({
     const uniqueTags = [...new Set(notes.flatMap(n => n.tags))];
 
     return (
-        <div className="w-2/4 p-6 pl-8 border-r flex flex-col justify-between bg-gray-50 shadow-lg overflow-y-auto">
+        <div className="w-3/8 p-6 pl-8 border-r flex flex-col justify-between bg-gray-50 shadow-lg overflow-y-auto">
             <div>
                 <div className="text-2xl font-bold text-center mb-6">Notes</div>
                 <div className="space-y-5">
