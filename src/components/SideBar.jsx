@@ -1,5 +1,5 @@
-import clsx from 'clsx'; // clsx kütüphanesi için
-import { FileText, Archive, Search, Plus, Tag } from "lucide-react"; // Lucide-react ikonları
+import clsx from 'clsx'; 
+import { FileText, Archive, Search, Plus, Tag } from "lucide-react"; 
 
 export default function Sidebar({
     notes,
@@ -12,11 +12,10 @@ export default function Sidebar({
     const uniqueTags = [...new Set(notes.flatMap(n => n.tags))];
 
     return (
-        <div className="w-1/4 p-6 border-r flex flex-col justify-between bg-gray-50 shadow-lg overflow-y-auto">
+        <div className="w-2/4 p-6 pl-8 border-r flex flex-col justify-between bg-gray-50 shadow-lg overflow-y-auto">
             <div>
                 <div className="text-2xl font-bold text-center mb-6">Notes</div>
                 <div className="space-y-5">
-
                     <button
                         onClick={() => { setViewArchived(false); setSelectedNote(null); }}
                         className={clsx("flex items-center w-full text-left px-4 py-3 rounded transition duration-200", {

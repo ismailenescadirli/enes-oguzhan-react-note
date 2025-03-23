@@ -17,9 +17,10 @@ export default function CreateNote({ newNote, setNewNote, addNote, setShowCreate
         &larr; Back to Notes
       </button>
 
-   
       <div className="mb-4">
-        <label htmlFor="title" className="block text-sm font-medium text-gray-700">Title</label>
+        <label htmlFor="title" className="block text-sm font-medium text-gray-700">
+          Title
+        </label>
         <input
           id="title"
           type="text"
@@ -30,7 +31,9 @@ export default function CreateNote({ newNote, setNewNote, addNote, setShowCreate
       </div>
 
       <div className="mb-4">
-        <label htmlFor="tags" className="block text-sm font-medium text-gray-700">Tags</label>
+        <label htmlFor="tags" className="block text-sm font-medium text-gray-700">
+          Tags
+        </label>
         <input
           id="tags"
           type="text"
@@ -40,9 +43,10 @@ export default function CreateNote({ newNote, setNewNote, addNote, setShowCreate
         />
       </div>
 
-    
       <div className="mb-4">
-        <label htmlFor="content" className="block text-sm font-medium text-gray-700">Content</label>
+        <label htmlFor="content" className="block text-sm font-medium text-gray-700">
+          Content
+        </label>
         <textarea
           id="content"
           value={newNote.content}
